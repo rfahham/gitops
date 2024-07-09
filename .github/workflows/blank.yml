@@ -44,7 +44,7 @@ jobs:
     
     - name: Gitops --Patch and push
       run: |
-        git config --global user.name "rfahham"
+        git config --global user.name "Ricardo Fahham"
         git config --global user.email "rfahham@hotmail.com"
         sed -i 's/image: rfahham/workon:v[0-9]\{1,3\}/image: rfahham\/workon:v${{github.run_number}}/' ./k8s/deployment.yaml
         git add ./k8s
