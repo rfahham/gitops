@@ -27,9 +27,9 @@ jobs:
       - name: Construção da imagem
         uses: docker/build-push-action@v6.2.0
         with:
-          context: ./src
+          context: .
           push: true
-          file: ./src/workon/Dockerfile
+          file: Dockerfile
           tags: |
             rfahham/workon:v${{ github.run_number}}
             rfahham/workon:latest
