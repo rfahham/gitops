@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: workon
-        image: rfahham/workon:v17
+        image: rfahham/workon:v18
         ports:
         - containerPort: 80
